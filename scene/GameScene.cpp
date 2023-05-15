@@ -15,11 +15,11 @@ void GameScene::Initialize() {
 	input_ = Input::GetInstance();
 	audio_ = Audio::GetInstance();
 
-	textureHandle_ = TextureManager::Load("DRA.png");
-	model_ = Model::Create();
+	textureHandle_ = TextureManager::Load("uvChecker.png");
 
 	worldTransform_.Initialize();
 	viewProjection_.Initialize();
+	model_ = Model::Create();
 
 	player_ = new Player();
 
